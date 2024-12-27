@@ -1,0 +1,44 @@
+-- Note for possible query.
+
+query ($search: String!) {
+  Page {
+    media(search: $search, type: ANIME) {
+      id
+      title {
+        romaji
+        english
+        native
+      }
+      episodes
+      averageScore
+      bannerImage
+      coverImage {
+        large
+        color
+      }
+      
+    }
+  }
+}
+
+
+query ($search: String!) {
+  Page {
+    media(search: $search, type: ANIME) {
+      id
+      title {
+        romaji
+        english
+        native
+      }
+      episodes
+      averageScore
+      bannerImage
+      coverImage {
+        large
+        color
+      }
+      
+    }
+  }
+}
